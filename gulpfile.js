@@ -31,7 +31,7 @@ gulp.task('_clean', function () {
 });
 
 // Copy all files
-gulp.task('_copy', ['_clean'], function () {
+gulp.task('_copy', function () {
     return gulp.src(['src/**/*']).pipe(gulp.dest(distDir));
 });
 
