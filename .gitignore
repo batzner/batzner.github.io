@@ -52,3 +52,4 @@ fabric.properties
 # CUSTOM
 .idea
 node_modules
+_dist
