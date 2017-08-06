@@ -1,6 +1,6 @@
 excerpt_separator: <!--more-->
 include: ["_pages"]
-permalink: /:title/
+permalink: /post/:title/
 exclude:
   - package.json
   - node_modules
