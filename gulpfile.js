@@ -15,7 +15,7 @@ const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 
 // Base for specifying paths in gulp.src and gulp.dest
-const distDir = '_dist/';
+const distDir = './';
 
 // Paths to be used in gulp.src
 const sourcePaths = {
