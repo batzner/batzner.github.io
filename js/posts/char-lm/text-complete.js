@@ -29,6 +29,8 @@ var DATASET_DEFAULTS = {
     }
 };
 
+var SEND_ON_ENTER = false;
+
 // Pseudo-constant jquery elements (constant within the scope of the post)
 var TEXT_INPUT = $('.text-input');
 var TEXT_OUTPUT = $('.text-output');
@@ -76,7 +78,7 @@ function selectDataset(name) {
 function onInput() {
     // Interpret an enter stroke at the end as a send click.
     var input = getCleanInput();
-    if (input.indexOf('\n') >= 0) {
+    if (SEND_ON_ENTER && input.indexOf('\n') >= 0) {
         // Remove the new lines
         TEXT_INPUT.html(input.replace('\n', ''));
         completeText();
